@@ -108,7 +108,7 @@ If you do
 gaga = finger + bubu
 ```
 It will add the two values together, and save the result in `gaga`.
-Analogous with multiplication, division, etc..
+Analogous with multiplication (`\*`), division(`\`), etc..
 The variables there hold numbers. Yippee.
 
 #### Bool
@@ -278,3 +278,4 @@ And it works!
 Just don't type any text.
 
 Congratulations, you can now write the most basic programs that can cover a lot of things!
+Checkout the `homework/` folder for homework so you know you've done did it.
