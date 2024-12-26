@@ -68,3 +68,8 @@ If that doesn't work, ping me and we'll set github up to do it.
 
 Congratulaitons!
 
+## Python
+
+For the python parts, go to the directory `tutorial_python/`.
+You do not _need_ to clone the code to read the text,
+and, frankly, it's easier to read on github.
