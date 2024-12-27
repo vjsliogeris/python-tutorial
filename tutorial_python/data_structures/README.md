@@ -448,3 +448,58 @@ New elos
 I believe this makes sense.
 
 ## Functions
+
+Slight detour to funcitons since we got into loops already.
+Functions are reusable bits of code, and now we'll try making our own functions.
+
+You create a function like this:
+
+```python
+def funtction_name(argument):
+    # Do thing with argument.
+```
+
+This creates a function with the name and the argument :).
+Let's create a function that takes a number, and increments it!
+
+```python
+def increment_number(number):
+    new_number = number + 1
+    return new_number
+```
+
+This function takes number, increases it by one, and returns it :).
+You can call it like this
+```python
+x = increment_number(5)
+```
+`x` will have value `6`.
+
+You can also make a funciton that increments all numbers in a list.
+
+```python
+def increment_list(old_list):
+    new_list = []
+    for old_value in old_list
+        new_value = increment_number(old_value)
+        new_list.append(new_value)
+    return new_list
+```
+
+Using it:
+```python
+list = [1, 5, 6]
+new_list = increment_list(list)
+```
+`new_list` will be `[2, 6, 7]`
+
+### Philosophy
+
+It is usually a very good idea to make the funcitons _as simple as possible_.
+Functions should usually do only one thing very well so it will be easier to understand/debug.
+If you want a function to do a complicated thing,
+instead of writing complicated code,
+break it up into simpler tasks.
+Those simpler tasks have simple functions,
+and the complicated funciton calls the simpler functions.
+This will pay dividends.
