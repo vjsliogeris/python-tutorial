@@ -22,6 +22,6 @@ Look at the extensions tab for "python", and install it.
 Done? Great! Move on to `base/` for further tutorials.
 If you're feeling like reading and studying,
 just go over the text as you did now.
-Otherwise, you can move straight to `bossfight/` to try and do the tasks,
+Otherwise, you can move straight to `base/homework/` to try and do the tasks,
 and reverse engineer stuff from the text.
 Whatever works.
