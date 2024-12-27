@@ -237,6 +237,7 @@ Casting is done via these three functions:
 - `int(thing)` tries to convert `thing` into an integer
 - `str(thing)` tries to convert `thing` into a string
 - `float(thing)` tries to convert `thing` into a float.
+
 Just be careful - if you try to convert text to a number,
 it will crash.
 
