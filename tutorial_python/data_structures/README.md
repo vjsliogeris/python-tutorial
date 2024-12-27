@@ -60,6 +60,7 @@ Types are like races - they souldn't mix.
 
 ##### Extend
 > Ok, but what if I want to add values of one list to another?
+
 You can do it with loops (we'll go over it later in this document),
 but this is so common that pyton has a function for it: `extend()`.
 `extend(thing)` takes a list of things (`thing` **must** be a list),
