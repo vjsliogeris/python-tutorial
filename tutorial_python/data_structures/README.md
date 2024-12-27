@@ -124,6 +124,7 @@ When the index is negative, it wraps around the other way of the list.
 Using `list[-1]` is a very common way to access the final / last added element of the list.
 ###### Slicing!
 [Documentation](https://www.geeksforgeeks.org/python-list-slicing/)
+
 Final bit of magic!
 
 ```python
@@ -136,7 +137,7 @@ theirlist = mylist[1:3]
 If there's a colon `:` in the index - it selects multiple values!
 The grammar is such: `list[start:finish]`.
 So `yourlist` will be `['homo', 'pofke', 'rolke']`,
-`hislist`: `['vycka', 'homo', ]`,
+`hislist`: `['vycka', 'homo']`,
 `herlist`: `['vycka', 'homo', 'pofke']`,
 `theirlist`: `['homo', 'pofke']`.
 
@@ -163,8 +164,8 @@ and `x` is `'pofke'`.
 
 DELETING THINGS FROM LISTS IS A SURE FIRE WAY TO SHIT PANT.
 When you delete an element from a list - indexes of further values get shifted back.
-It makes it **super easy** to lose trach of element positions and fuck up.
-If you ever thing of removing elements from the list - reconsider.
+It makes it **super easy** to lose track of element positions and fuck up.
+If you ever think of removing elements from the list - reconsider.
 It is most often way easier and better to just re-build a list without including some values,
 instead of taking values _out_ of the list.
 
@@ -194,7 +195,7 @@ So:
 mylist = [4, 3, 18, -1.2]
 x = sum(mylist)
 ```
-`x` will be 3 + 4 + 18 - 1.2 = `23.8` I thing.
+`x` will be 3 + 4 + 18 - 1.2 = `23.8` I think.
 ```python
 mylist = ['vycka', 'homo', 'pofke', 'rolke']
 x = sum(mylist)
@@ -241,8 +242,7 @@ You'll only notice if you have lists with _millions_ of elements.
 ### Dictionaries
 [Documentation](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
-Dictionaries are like lists, but slightly cooler
-- instead of being held at positions denoted by numbers,
+Dictionaries are like lists, but slightly cooler - instead of being held at positions denoted by numbers,
 they're accessed by _names_, otherwise referred to as `keys`.
 
 This is what dictionaries look like:
@@ -539,7 +539,7 @@ You can also make a funciton that increments all numbers in a list.
 ```python
 def increment_list(old_list):
     new_list = []
-    for old_value in old_list
+    for old_value in old_list:
         new_value = increment_number(old_value)
         new_list.append(new_value)
     return new_list
