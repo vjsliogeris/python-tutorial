@@ -19,9 +19,12 @@ Vscode is generally great with tooltips - if it suggests you install something,
 generally it's a good idea.
 Look at the extensions tab for "python", and install it.
 
-Done? Great! Move on to `base/` for further tutorials.
+Done? Great!
+There are several lessons, I suggest going in the following order:
+1. `base/`
+2. `data_structures/`
 If you're feeling like reading and studying,
 just go over the text as you did now.
-Otherwise, you can move straight to `base/homework/` to try and do the tasks,
+Otherwise, you can move straight to `<thing>/homework/` to try and do the tasks,
 and reverse engineer stuff from the text.
 Whatever works.
