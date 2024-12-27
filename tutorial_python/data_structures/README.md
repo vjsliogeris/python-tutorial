@@ -347,4 +347,104 @@ as we usually access them by keys.
 
 ## Loops
 
+Okay, now I'll introduce you to for loops.
+This is gonna be the main way of working with lists and dictionaries.
+
+The basic grammar of the for loop is such:
+```python
+# We're not in loop yet
+for value in list:
+    #do thing with value
+    #do another thing with value
+    #...
+    #do final thing with value
+# We're out of the loop
+```
+### Looping lists
+The indentation denotes whether line of code belongs within the loop.
+Let's show us an actual example:
+```python
+things = [1, 4, -1, 2.5]
+new_things = []
+for bubu in things:
+    new_bubu = bubu + 1
+    new_things.append(new_bubu)
+    print(new_bubu)
+print(new_things)
+```
+Let's go line by line.
+The first line initializes one list with some numbers.
+The second line initializes an empty list.
+The third line starts a `for` loop,
+noting that we're iterating over the list `things`,
+with each value being temporarily assigned to `bubu`.
+Then likes 4-6 are the contents of the loop.
+For each element it assins the value to another variable `new_bubu`,
+which is 1 larger than `bubu`.
+Line 5 adds the new value `new_bubu`.
+The 6th line prints the value to the terminal.
+The line 7 prints the new list after we're done iterating the list.
+
+When run it'll produce the following
+```bash
+<renamorcen@salomeike:~/education/python-tutorial/tutorial_python/data_structures>
+zsh/4 13  (git)-[feature/data_structures]-% python test.py
+2
+5
+0
+3.5
+[2, 5, 0, 3.5]
+```
+The first four lines come from within the for loop,
+and the final line is the `new_things` new list.
+All the numbers from the input are incremented by one,
+and added to the new list.
+Ta-da!
+
+### Looping dictionaries.
+I say we're going to loop dictionaries,
+but that's a slight lie.
+The functions `keys`, `values` and `items` return **lists** that correspond to the dicitonary.
+
+```python
+retard_elo = {
+    "rolke": 4,
+    "vycka": 900,
+    "nojus": 1500,
+    "efkas": 2000,
+}
+
+print("Printing old elos")
+for name, elo in retard_elo.items():
+    print('Person:' + name)
+    print(elo)
+
+print("Computing new elos")
+new_elo = {}
+for name in retard_elo.keys():
+    elo = retard_elo[name]
+    new_elo[name] = elo+100
+print("New elos")
+print(new_elo)
+```
+
+This produces the following.
+```bash
+<renamorcen@salomeike:~/education/python-tutorial/tutorial_python/data_structures>
+zsh/4 19 [1]  (git)-[feature/data_structures]-% python test.py
+Printing old elos
+Person:rolke
+4
+Person:vycka
+900
+Person:nojus
+1500
+Person:efkas
+2000
+Computing new elos
+New elos
+{'rolke': 104, 'vycka': 1000, 'nojus': 1600, 'efkas': 2100}
+```
+I believe this makes sense.
+
 ## Functions
