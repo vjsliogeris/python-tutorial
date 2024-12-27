@@ -127,7 +127,7 @@ This handles text.
 Text handling is big and important and cool.
 Do do a string, just surround _literally anything_ with either `"` or `'`.
 ```python
-evaldas_word = "Big, thing, something, ass".
+evaldas_word = "Big, thing, something, ass"
 monkey = 'I like banana'
 ```
 You can join them with a plus sign.
