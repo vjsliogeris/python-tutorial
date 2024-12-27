@@ -40,6 +40,7 @@ Windows, when you double-click a file, looks at the extension, and:
 - Gives it to notepad if it's a `.txt`
 - Gives it to python if it's a `.py`
 - et cetera
+
 Text editors also use the extensions to guess what the code is so it can properly colour text.
 
 Since we already tell the computer to use `python3`, the extension is meaningless.
