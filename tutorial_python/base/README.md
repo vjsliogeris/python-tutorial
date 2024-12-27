@@ -109,7 +109,7 @@ If you do
 gaga = finger + bubu
 ```
 It will add the two values together, and save the result in `gaga`.
-Analogous with multiplication (`\*`), division(`\`), etc..
+Analogous with multiplication (`*`), division(`\`), etc..
 The variables there hold numbers. Yippee.
 
 #### Bool
