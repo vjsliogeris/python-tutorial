@@ -345,8 +345,51 @@ While order in lists usually matters,
 dictionaries are looser in that sense,
 as we usually access them by keys.
 
+## Conditions
+
+Conditions are the special sauce to programming.
+They make the program to do things depending on some conditions.
+The basic conditional thingy is an `if/else` block.
+It looks like this:
+```python
+if condition:
+    # Do thing when condition is True
+else:
+    # Do thing when condition is False
+```
+
+Condition is a variable that holds a `boolean` primitive.
+Boolean primitives can be constructed in various ways.
+For example:
+```python
+x = a == 6
+```
+If the variable `a` holds value `6`, then `x` will be `True`,
+otherwise `x` will be `False`.
+
+Special list grammar also works here.
+
+```python
+thingy = ['benas', 'jonas']
+x = 'benas' in thingy
+y = 'petras' in thingy
+```
+The `a in b` notation checks if `a` is an element in list `b`.
+After running the code `x` will be `True` and `y` will be `False`.
+
+These can be used in if statements.
+
+```python
+thingy = ['benas', 'jonas']
+if 'benas' in thingy:
+    print('Benas is in our list')
+else:
+    print('Benas is not in our list')
+```
+
 ## Loops
 
+### For loops
 Okay, now I'll introduce you to for loops.
 This is gonna be the main way of working with lists and dictionaries.
 
@@ -447,6 +490,21 @@ New elos
 ```
 I believe this makes sense.
 
+### While loops
+While loops are like for loops,
+except instead of looping over lists they loop while some condition is `True`.
+For example:
+```python
+thingy = ['benas', 'jonas']
+while len(thingy) > 0:
+    print('Removing an element')
+    element = thingy.pop(0)
+    print(element + ' removed.')
+```
+This will run the loop while the length of the list is above 0, i.e.
+there are still elements in the list.
+In the loop it pops (removes) the first element, and prints it.
+
 ## Functions
 
 Slight detour to funcitons since we got into loops already.
@@ -503,3 +561,5 @@ break it up into simpler tasks.
 Those simpler tasks have simple functions,
 and the complicated funciton calls the simpler functions.
 This will pay dividends.
+
+Now you can try and do homework.
