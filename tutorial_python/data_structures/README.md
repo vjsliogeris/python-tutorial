@@ -240,6 +240,111 @@ You'll only notice if you have lists with _millions_ of elements.
 ### Dictionaries
 [Documentation](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
+Dictionaries are like lists, but slightly cooler
+- instead of being held at positions denoted by numbers,
+they're accessed by _names_, otherwise referred to as `keys`.
+
+This is what dictionaries look like:
+```python
+enis = {}
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    }
+```
+There `enis` is an empty dictionary,
+and `benis` is a dictionary with two values.
+One value of `benis` has key `"john"` and value of a list of random shit: `[1,43,"thing"]`.
+The other value has key `"hess"` and value `123`.
+
+They can hold literally any shit as value - lists, other dictionaries, whatver.
+Keys have _some_ restrictions - for now let's limit them to either numbers or strings.
+
+#### Adding to dictionaries
+It's like magic.
+```python
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    }
+benis["burger"] = "skanus"
+```
+`benis` will now be
+```python
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    "burger": "skanus",
+    }
+```
+Great!
+
+#### Accessing things in dictionaries
+```python
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    "burger": "skanus",
+    }
+x = benis["john"]
+y = benis["hess"]
+z = benis["burger"]
+```
+`x` will have value `[1,43,"thing"]`,
+`y` - `123` and
+`z` - `"skanus"`
+
+##### ADVANCED SHIT
+
+There are three functions we may like if we wanna work on entire dictionaries.
+- `dictionary.keys()`
+- `dictionary.values()`
+- `dictionary.items()`
+
+`keys()` returns a list of all the keys.
+```python
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    "burger": "skanus",
+    }
+x = benis.keys()
+```
+`x` will have value `["john", "hess", "burger"]`.
+
+`values()` returns a list of all the values.
+```python
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    "burger": "skanus",
+    }
+x = benis.values()
+```
+`x` will have value `[[1,43,"thing"], 123, "skanus"]`.
+
+`items()` returns _a list key-value pairs_.
+```python
+benis = {
+    "john": [1,43,"thing"],
+    "hess": 123,
+    "burger": "skanus",
+    }
+x = benis.items()
+```
+`x` will have value `[("john", [1,43,"thing"]), ("hess", 123), ("burger", "skanus")]`.
+
+#### Deleting
+
+Don't.
+
+#### Mangling
+
+Usually no need.
+While order in lists usually matters,
+dictionaries are looser in that sense,
+as we usually access them by keys.
+
 ## Loops
 
 ## Functions
